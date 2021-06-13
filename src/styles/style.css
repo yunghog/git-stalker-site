@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'longhaul';
+  src: url('../assets/fonts/longhaul.ttf');
+}
+@font-face {
+  font-family: 'poppins';
+  src: url('../assets/fonts/poppins.ttf');
+}
+@font-face {
+  font-family: 'abril';
+  src: url('../assets/fonts/abril.ttf');
+}
+:root{
+  --primary: #5e42b1;
+  --secondary: #f21170;
+  --primary-rgb: 94,66,177;
+  --secondary-rgb: 242,17,112;
+}
+h1,h2,h3{
+  font-family: 'abril';
+}
+body{
+  font-family: 'poppins';
+  background-color: #eee;
+  color: #222;
+}
+.bg-grad{
+  background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 110%);
+}
+.box{
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #5553;
+}
+.container-fluid{
+  margin: 0px;
+  padding: 0px;
+}
+.waves{
+  position: relative;
+}
+.wave-behind{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  left: 0px;
+}
+.bg-primary{
+  background-color: var(--primary) !important;
+  color: #eee;
+}
+.bg-secondary{
+  background-color: var(--secondary);
+}
+.form-ctrl ion-input{
+  padding-left: 30px !important;
+  border-radius: 10px;
+  border: 2px solid var(--ion-color-primary);
+  margin: 10px 0px 10px 0px;
+}
+.form-ctrl .label{
+  position: absolute;
+  font-size: 14px;
+  background-color: var(--ion-color-primary);
+  padding: 0px 10px;
+  color: var(--ion-color-light);
+  top: 0px;
+  left: 20px;
+  z-index: 10;
+}
+.form-ctrl .icon{
+  position: absolute;
+  left: 10px;
+}
+.anim-shift-up{
+  margin: inherit;
+  animation: shift-up 2s ease;
+}
+@keyframes shift-up{
+  from{
+    margin-top: 30px;
+  }
+  to{
+    margin-top: 0px;
+  }
+}
+.hero-con{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.hero-content{
+  padding: 20% 0 0 20%;
+}
+.mock-up{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.mock-up .blob{
+position: absolute;
+z-index: -10;
+width: 80%;
+top: 0px;
+right: 0px;
+}
+.mock-up .phone{
+  padding-top: 100px;
+  width: 30%;
+}
+@media screen and (max-width: 769px){
+  .hero-con{
+    background: linear-gradient(225deg, var(--primary) 0%, var(--secondary) 110%);
+    color: #eee;
+  }
+  .hero-content{
+    padding: 0px;
+  }
+  .mock-up .blob{
+    width: 100%;
+  }
+  .mock-up .phone{
+    width: 60%;
+    padding: 20px;
+  }
+}
