@@ -126,3 +126,16 @@ right: 0px;
     padding: 20px;
   }
 }
+/* navbar */
+.navbar{
+  position: absolute;
+  margin: 0px 120px;
+}
+@media screen and (max-width: 769px) {
+  .navbar{
+    position: relative;
+    margin: 0px;
+    background-color: #222;
+    color: #eee !important;
+  }
+}
