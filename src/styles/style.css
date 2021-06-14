@@ -23,6 +23,7 @@ body{
   font-family: 'poppins';
   background-color: #eee;
   color: #222;
+  scroll-behavior: smooth;
 }
 .bg-grad{
   background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 110%);
@@ -140,18 +141,77 @@ right: 0px;
 /* navbar */
 .navbar{
   position: absolute;
-  margin: 0px 120px;
+  padding: 0px 120px;
+  z-index: 20;
+}
+.sticky{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  animation: shift-down .5s;
+  box-shadow: 0px 10px 10px #5555;
+}
+@keyframes shift-down {
+  from{
+    top: -60px;
+  }
+  to{
+    top: 0px;
+  }
 }
 @media screen and (max-width: 769px) {
   .navbar{
     position: relative;
-    margin: 0px;
-    background-color: #222;
+    width: 100%;
+    padding: 10px 10px;
+    }
+  .sticky{
+    position: fixed;
   }
-  #root > div > nav > button{
-    background-color: var(--primary);
+}
+
+/* about */
+.about{
+  color: #eee;
+  padding: 0px;
+}
+.full-section{
+  min-height: 100vh !important;
+}
+
+/* downloads */
+.downloads-con{
+  padding: 15px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.download-content{
+  text-align: right;
+}
+.download-img img{
+  width: 60%;
+}
+@media screen and (max-width: 769px) {
+  .download-content{
+    text-align: center;
+    padding: 20px;
   }
-  .navbar a{
-    color: #eee !important;
+  .download-img img{
+    width: 100%;
+    padding: 20px;
   }
+}
+footer a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+.alert-primary{
+  color: var(--primary);
+  background-color: rgba(var(--primary-rgb),.2);
+  border-color: var(--primary);
+}
+.text-primary{
+  color: var(--primary) !important;
 }
