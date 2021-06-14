@@ -8,7 +8,6 @@ function Navbar1(){
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
       let pos = window.scrollY;
-      console.log(pos);
       if(pos>150)
         setIsTop(false)
       else
