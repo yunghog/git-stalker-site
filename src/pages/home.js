@@ -58,7 +58,9 @@ export default class Home extends React.Component{
                     Gitstalker
                   </h1>
                   <p>Do you have a habbit of stalking github profiles all the time? <br/> Then Gitstalker is for you. <br/> Find out what your peers upto </p>
-                  <a className="btn btn-download" href={app} onClick={this.incDownloads} download> <FaDownload/> Download for android</a>
+                  <a className="btn btn-dark btn-download" href={app} onClick={this.incDownloads} download> <FaDownload/> Download for android</a>
+                  <br/>
+                  <a className="btn my-2" href={app} download> <IoLogoGithub/> View source code</a>
                 </div>
               </div>
             </Col>
@@ -78,7 +80,7 @@ export default class Home extends React.Component{
             <Col md="6">
               <div className="">
                 <h1 className="">About</h1>
-                <Alert variant="primary" className="mx-1">
+                <Alert variant="primary">
                   <p>Features of Gitstalker app</p>
                   <ul style={{listStyleType:'square'}}>
                     <li>Quick access to Github feed</li>
@@ -86,11 +88,11 @@ export default class Home extends React.Component{
                     <li>User friendly and elegant user interface design</li>
                   </ul>
                 </Alert>
-                <Alert variant="primary"  className="mx-1">
+                <Alert variant="primary">
                   Instruction: Signup and login with your Github username
                 </Alert>
                 <span>
-                  <Alert style={{width:'inherit',display:'inline-block'}} variant="primary"  className="mx-1">
+                  <Alert variant="primary">
                     <p>Stack used</p>
                     <h2>
                       <IoLogoIonic/>
@@ -99,11 +101,11 @@ export default class Home extends React.Component{
                       <IoLogoFirebase/>
                     </h2>
                   </Alert>
-                  <Alert  style={{width:'inherit%',display:'inline-block'}} variant="primary"  className="mx-1">
-                    <p>Total Downloads</p>
-                    <h2>{this.state.downloads}</h2>
-                  </Alert>
                 </span>
+              </div>
+              <div className="tile">
+                <p>Downloads</p>
+                <h2>{this.state.downloads}</h2>
               </div>
             </Col>
           </Row>
@@ -112,6 +114,7 @@ export default class Home extends React.Component{
           <Row noGutters>
             <Col md="6" className="download-content px-5">
               <h1>Download</h1>
+              <h5>Gitstalker v 1.1</h5>
               <p>Download and install gitstalker now</p>
               <a className="btn btn-light" href={app} download onClick={this.incDownloads}> <FaDownload/> Download for android</a>
             </Col>

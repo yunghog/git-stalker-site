@@ -215,3 +215,16 @@ footer a{
 .text-primary{
   color: var(--primary) !important;
 }
+.tile{
+  background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 110%);
+  border-radius: 5px;
+  color: #eee;
+  border: 2px solid var(--primary);
+  text-align: center;
+}
+.tile p{
+  margin: 0px;
+}
+.tile h2{
+  margin: 0px;
+}
