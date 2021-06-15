@@ -57,7 +57,7 @@ export default class Home extends React.Component{
                     <img src={logo} height="40px" style={{paddingRight:'10px',marginTop:'-10px'}} alt="logo"/>
                     Gitstalker
                   </h1>
-                  <p>Do you have a habbit of stalking github profiles all the time? <br/> Then Gitstalker is for you. <br/> Find out what your peers upto </p>
+                  <p>Do you have a habbit of stalking github profiles all the time? <br/> Then Gitstalker is for you. <br/> Find out what your peers are upto !! </p>
                   <a className="btn btn-dark btn-download" href={app} onClick={this.incDownloads} download> <FaDownload/> Download for android</a>
                   <br/>
                   <a className="btn my-2" href={app} download> <IoLogoGithub/> View source code</a>
